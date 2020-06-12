@@ -1,22 +1,44 @@
 @import "./fonts";
+@import "./variables";
+@import "./sidebar";
+@import "./header";
+@import "./main-area";
+@import "./playback";
 
-$text-color: #fff;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
 html {
+    // esto define que 1rem son 10px
     font-size: 10px;
-    /*font-size: 62.5%;*/
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    font-family: 'Open Sans', sans-serif;
     color: $text-color;
-    background-color: tomato;
+    background-color: $background-color;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: -0.35px;
+.container {
+    width: 100vw;
+    min-height: 100vh;
 }
+
+.content {
+    display: flex;
+}
+
+
+
+
+
 
