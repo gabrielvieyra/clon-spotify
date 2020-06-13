@@ -4,4 +4,70 @@
     /*width: 23rem;
     height: 87rem;*/
     height: 87rem;
+    padding: 2.4rem 0 0 2.4rem;
+
+    .brand {
+        padding-bottom: 1.8rem;
+        cursor: pointer;
+
+        .spotify-logo {
+            width: 13.1rem;
+        }
+    }
+
+    .menu-item {
+        font-size: 2.2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $text-color-grey;
+        display: flex;
+        align-items: center;
+        height: 4rem;
+
+        &:hover {
+            color: $text-color-white;
+        }
+    }
+    
+    img {
+        opacity: 0.7;
+    }
+
+    span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 1.5rem;
+    }
+
+    .sidebar-header{
+        color: $text-color-grey;
+        margin-top: 2.4rem;
+        margin-bottom: 2.08rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: default;
+    }
+
+    .linea-separador {
+        height: 0.1rem;
+        width: 18.2rem;
+        margin: 0.9rem 0;
+        background-color: $background-playback;
+        border: none;
+    }
+
+    .playlists {
+        max-height: 46.3rem;
+        overflow-y: scroll;
+
+        .playlist{
+            margin-left: 0;
+            font-weight: normal;
+            cursor: default;
+        }
+    }
 }
+
+
