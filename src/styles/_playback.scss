@@ -1,5 +1,72 @@
 .playback {
     width: 100%;
-    height: 99px;
+    height: 9.9rem;
     background-color: $background-playback;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    border-top: 1px solid $background-sidebar;
+
+    .playback-left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .cancion-img {
+            box-shadow: 0 10px 30px 0 rgba(0,0,0,.3), 0 1px 2px 0 rgba(0,0,0,.2);
+            cursor: pointer;
+        }
+
+        .cancion {
+            display: flex;
+            flex-direction: column;
+            margin: 0 1.6rem;
+
+            .cancion-title {
+                text-decoration: none;
+                color: $text-color-white;
+                font-size: 1.4rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .cancion-subtitle {
+                text-decoration: none;
+                color: $text-color-grey;
+                font-size: 1.2rem;
+
+                &:hover {
+                    color: $text-color-white;
+                    border-bottom: 1px solid $text-color-white;
+                }
+            }
+
+        }
+
+        .cancion-icon {
+            display: flex;
+
+            .icon {
+                color: $text-color-grey;
+                font-size: 1.6rem;
+                margin-right: 1.6rem;
+                cursor: pointer;
+
+                &:hover {
+                    color: $text-color-white;
+                }
+            }
+        }
+    }
+
+    .playback-center {
+        width: 100%;
+    }
+
+    .playback-right {
+        width: 100%;
+    }
+
 }

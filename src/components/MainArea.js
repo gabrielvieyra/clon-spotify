@@ -1,6 +1,7 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faChevronCircleLeft, faChevronCircleRight, faUser, faCaretDown} from '@fortawesome/free-solid-svg-icons';
+import ListadoCards from './ListadoCards';
 
 const MainArea = () => {
     return (
@@ -19,26 +20,8 @@ const MainArea = () => {
                 </div>
             </header>
 
-            <main>
-                <section className="section">
-                    <div className="section-header">
-                        <h2 className="section-titulo">Escuchados recientemente</h2>
-                    </div>
-                    <div className="section-body">
-                        <div className="section-body-card">
-                            <img src="img/top-arg.jpg" alt="" width="100%" className="card-img"></img>
-                            <p className="card-title">El top 50 de Argentina</p>
-                            <p className="card-subtitle">Tu actualización diaria de las canciones más escuchadas en Argentina ahora mismo.</p>
-                        </div>
-                        <div className="section-body-card">
-                            <img src="img/top-arg.jpg" alt="" width="100%" className="card-img"></img>
-                            <p className="card-title">El top 50 de Argentina</p>
-                            <p className="card-subtitle">Tu actualización diaria de las canciones más escuchadas en Argentina ahora mismo.</p>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            
+            <ListadoCards />
+            <ListadoCards />
         </div>
     )
 }
