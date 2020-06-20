@@ -63,6 +63,74 @@
 
     .playback-center {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .playback-icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 22.4rem;
+            height: 3.2rem;
+            margin-bottom: 1.2rem;
+
+            .playback-icon {
+                font-size: 1.6rem;
+                color: $text-color-grey;
+
+                &:hover {
+                    color: $text-color-white;
+                }
+            }
+
+            .playback-icon-play {
+                font-size: 3.2rem;
+                color: $text-color-grey;
+
+                &:hover {
+                    color: $text-color-white;
+                }
+            }
+        }
+
+        .playback-duration {
+            width: 72.2rem;
+            height: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .duration {
+                width: 64.2rem;
+                height: 0.4rem;
+                margin: 0 1rem;
+                -webkit-appearance: none;
+                background-color: $text-color-grey;
+                outline: none;
+                
+                &:hover {
+                    background-color: $duration-hover-background;
+                }
+
+                &::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 2rem;
+                    height: 0.6rem;
+                    background-color: $background-sidebar;
+                    cursor: pointer;
+                } 
+            }
+
+            .playback-time {
+                font-size: 1.1rem;
+                color: $text-color-grey;
+                cursor: default;
+            }
+        }
+
     }
 
     .playback-right {
