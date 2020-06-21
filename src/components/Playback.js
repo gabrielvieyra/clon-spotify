@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faHeart, faWindowMaximize, faRandom, faStepBackward, faPlayCircle, faStepForward, faRedoAlt} from '@fortawesome/free-solid-svg-icons';
+import {faHeart, faWindowMaximize, faRandom, faStepBackward, faPlayCircle, faStepForward, faRedoAlt, faList, faDesktop, faVolumeUp} from '@fortawesome/free-solid-svg-icons';
 
 const Playback = () => {
     return (
@@ -27,13 +27,18 @@ const Playback = () => {
                 </div>
                 <div className="playback-duration">
                     <span className="playback-time">1:36</span>
-                    <input className="duration" type="range" />
+                    <input className="duration" type="range" min="0" max="100" />
                     <span className="playback-time">3:50</span>
                 </div>
             </div>
 
             <div className="playback-right">
-                
+                <div className="playback-volumen">
+                    <FontAwesomeIcon className="icon" icon={faList} />
+                    <FontAwesomeIcon className="icon" icon={faDesktop} />
+                    <FontAwesomeIcon className="icon" icon={faVolumeUp} />
+                    <input className="volumen" type="range" min="0" max="100" />
+                </div>
             </div>
         </div>
     )

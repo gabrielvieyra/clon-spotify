@@ -103,25 +103,24 @@
             align-items: center;
 
             .duration {
+                -webkit-appearance: none;
                 width: 64.2rem;
                 height: 0.4rem;
                 margin: 0 1rem;
-                -webkit-appearance: none;
                 background-color: $text-color-grey;
                 outline: none;
-                
+
                 &:hover {
-                    background-color: $duration-hover-background;
+                    background-color: $volumen-hover-background;
                 }
 
                 &::-webkit-slider-thumb {
                     -webkit-appearance: none;
                     appearance: none;
                     width: 2rem;
-                    height: 0.6rem;
+                    height: 0.4rem;
                     background-color: $background-sidebar;
-                    cursor: pointer;
-                } 
+                }
             }
 
             .playback-time {
@@ -135,6 +134,46 @@
 
     .playback-right {
         width: 100%;
-    }
+        display: flex;
+        align-items: center;
 
+        .playback-volumen {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            height: 3.2rem;
+
+            .icon {
+                color: $text-color-grey;
+                font-size: 1.6rem;
+                margin-right: 1.6rem;
+
+                &:hover {
+                    color: $text-color-white;
+                }
+            }
+
+            .volumen {
+                -webkit-appearance: none;
+                width: 8.4rem;
+                height: 0.4rem;
+                background-color: $text-color-grey;
+                outline: none;
+
+                &:hover {
+                    background-color: $volumen-hover-background;
+                }
+
+                &::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 2rem;
+                    height: 0.4rem;
+                    background-color: $background-sidebar;
+                }
+            }
+
+        }
+    }
 }
