@@ -2,6 +2,7 @@ import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faChevronCircleLeft, faChevronCircleRight, faUser, faCaretDown} from '@fortawesome/free-solid-svg-icons';
 import ListadoCards from './ListadoCards';
+import ListadoExitos from './ListadoExitos';
 
 const MainArea = () => {
     return (
@@ -21,7 +22,7 @@ const MainArea = () => {
             </header>
 
             <ListadoCards title="Escuchados recientemente"/>
-            {/*<ListadoCards title="Listas de éxitos"/>*/}
+            <ListadoExitos title="Listas de éxitos"/>
         </div>
     )
 }
