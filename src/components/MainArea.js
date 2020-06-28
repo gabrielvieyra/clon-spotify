@@ -20,8 +20,8 @@ const MainArea = () => {
                 </div>
             </header>
 
-            <ListadoCards />
-            <ListadoCards />
+            <ListadoCards title="Escuchados recientemente"/>
+            {/*<ListadoCards title="Listas de éxitos"/>*/}
         </div>
     )
 }
