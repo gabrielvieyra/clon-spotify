@@ -1,11 +1,11 @@
 Este proyecto es un clon de spotify hecho con React para poner en practica Flexbox y SASS, el listado de imagenes me las traigo de una API externa.
-##
+
 El stack que maneje para generar este proyecto fue:
-##
+
 HTML, CSS, SASS, Javascript, React.
-##
+
 ___
-##
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
